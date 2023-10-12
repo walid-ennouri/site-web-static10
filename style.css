@@ -1,0 +1,126 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(img/pexels-riccardo-307008.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+nav{
+    display:flex;
+    width:100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.header nav img{
+    width:150px;
+    height:50px;
+    cursor: pointer;
+}
+
+h3{
+    width:120px;
+    cursor: pointer;
+}
+nav i{
+    width:30px;
+    cursor: pointer;
+    color:#fff;
+}
+nav ul{
+    flex:1;
+    text-align: right;
+    padding: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    position:relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    position:absolute;
+    bottom:-5px;
+    left:50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.5s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+.text-box{
+    color:#fff;
+    position:absolute;
+    bottom:8%;
+}
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+}
+.text-box h1{
+    font-size: 180px;
+    line-height: 160px;
+    margin-left: -10px;
+    color:transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(img/montain.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 50s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+
+.text-box .row {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.text-box a{
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+}
+.text-box a span {
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+.social-icon{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+.social-icon i{
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+    color:#fff;
+    font-size: larger;
+}
+
